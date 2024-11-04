@@ -13,11 +13,12 @@ def get_page_rules(zone_id, headers):
         return None
 
 def main():
+    # Replace the xx with the name of the client
     user = AdaptureUser('xx', token_name='token')
     headers = user.credentials.headers
     
-    # List of zone names to retrieve page rules for
-    zone_names = ['zone_name_1', 'zone_name_2']
+    # List of zone names to retrieve page rules for , replace the 'xx' with the name of the zone you want to fetch the data for
+    zone_names = ['xx', 'xx']
     all_rows = []  # To store data for all zones
 
     for zone_name in zone_names:
